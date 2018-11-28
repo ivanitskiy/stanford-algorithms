@@ -160,22 +160,4 @@ func main() {
 	rootCmd.AddCommand(schedulesJobsDiffCmd, schedulesJobsRatioCmd, mstCmd)
 	rootCmd.Execute()
 
-	// jobs := readJobs()
-	// ratio: 190444405675
-	// diff:  188636667966
-	// ===================
-	// 		 1807737709
-	// ////////////////////
-	// sort.Slice(jobs, func(i, j int) bool {
-	// 	return float64(jobs[i].weight)/float64(jobs[i].length) < float64(jobs[j].weight)/float64(jobs[j].length)
-	// })
-
-	// lcount = 0
-	// retval = 0
-	// for _, v := range jobs {
-	// 	lcount = lcount + v.length
-	// 	retval = retval + int64(v.weight*lcount)
-	// }
-	// fmt.Println("By weight:", jobs, "\n", retval)
-
 }
